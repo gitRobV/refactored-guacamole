@@ -1,0 +1,30 @@
+#wrapper {
+    margin: 0 auto;
+    width: 75%;
+}
+
+#form_box, #results_box {
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 16px;
+    width: 99%;
+}
+
+label {
+    margin-bottom: 7px;
+    display: inline-block;
+}
+
+.clear {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    display: inline-block;
+}

@@ -1,0 +1,24 @@
+<div class="col-sm-4 col-sm-offset-4" >
+    <div class="center">
+        <a class="button" [routerLink]="['/register']">Register</a>
+        <a class="button" [routerLink]="['/login']">Log In</a>
+    </div>
+    <form (submit)="login(user)">
+        <fieldset>
+                <legend>Please Log In to Continue.</legend>
+                <div class="input-group vertical">
+                    <input type="email" name="email"
+                    id="email" placeholder="Email"
+                    [(ngModel)]="user.email"
+                    #email="ngModel" >
+                </div>
+                <div class="input-group vertical">
+                    <input type="password" name="password"
+                    id="password" placeholder="Password"
+                    [(ngModel)]="user.password"
+                    #password="ngModel" >
+                </div>
+                <button type="submit" class="primary" name="submit">Log In</button>
+        </fieldset>
+    </form>
+</div>

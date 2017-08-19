@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja Dashboard</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/assets/mini.css/dist/mini-dark.min.css">
+        <script src="/assets/jquery/dist/jquery.min.js"></script>
+        <script src="js/master.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="">
+                <h1>Robert Villarreal</h1>
+                <h2 class="">Ninja Dashboard</h2>
+                <p>Grand Ninja Station</p>
+            </div>
+            <div class="">
+                <h2>Ninja</h2>
+                <p>Name: <span><%= ninja.name %></span></p>
+                <p>Favorite Stack: <span><%= ninja.fav_stack %></span></p>
+                <p>Black Belts: <span><%= ninja.belt_count %></span></p>
+                <a href="/ninja/edit/<%= ninja.id %>" class="button" >Edit Ninja</a>
+                <form class="clear" action="/ninja/destroy/<%= ninja.id %>" method="post">
+                    <button type="submit" name="button">Destroy</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

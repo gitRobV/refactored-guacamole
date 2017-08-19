@@ -1,0 +1,25 @@
+{
+  "name": "base_project",
+  "description": "base_project",
+  "main": "app.js",
+  "authors": [
+    "Robert Villarreal"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "base_project"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mini.css": "^2.3.3",
+    "jquery": "^3.2.1"
+  }
+}

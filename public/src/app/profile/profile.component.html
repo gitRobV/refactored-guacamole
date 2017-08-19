@@ -1,0 +1,10 @@
+<div class="col-sm-4 col-sm-offset-4" >
+    <div class="center">
+        <a class="button" *ngIf="user" [routerLink]="['/profile']">Profile</a>
+        <a class="button" *ngIf="user" (click)="logout()">Log Out</a>
+    </div>
+</div>
+<div class="card">
+    <h4>List of other Users</h4>
+    <p *ngFor="let user of allUsers"><button>{{ user.email }}</button></p>
+</div>

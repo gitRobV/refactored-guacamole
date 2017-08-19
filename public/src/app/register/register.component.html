@@ -1,0 +1,30 @@
+<div class="col-sm-4 col-sm-offset-4" >
+    <div class="center">
+        <a class="button" [routerLink]="['/register']">Register</a>
+        <a class="button" [routerLink]="['/login']">Log In</a>
+    </div>
+    <form (submit)="registerUser(newUser)">
+        <fieldset>
+            <legend>Please Register as a User</legend>
+            <div class="input-group vertical">
+                <input type="text" id="email" name="email"
+                [(ngModel)]="newUser.email"
+                #email="ngModel"
+                placeholder="Email">
+            </div>
+            <div class="input-group vertical">
+                <input type="password" id="password" name="password"
+                [(ngModel)]="newUser.password"
+                #password="ngModel"
+                placeholder="Password">
+            </div>
+            <div class="input-group vertical">
+                <input type="password" id="confirm_pw" name="confirm_pw"
+                [(ngModel)]="newUser.confirm_pw"
+                #confirm_pw="ngModel"
+                placeholder="Confirm Password">
+            </div>
+            <input type="submit" class="primary" value="Submit" name="submit">
+        </fieldset>
+    </form>
+</div>
